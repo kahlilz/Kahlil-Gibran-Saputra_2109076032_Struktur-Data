@@ -1,0 +1,13 @@
+def mengurutkan_angka(angka):
+    if not angka:
+        return []
+    
+    if angka[] % 2 == 0:
+        return [angka[0]] + mengurutkan_angka(angka[1:])
+    else:           
+        return mengurutkan_angka(angka[1:]) + [angka[1]]
+
+# Contoh penggunaan
+input = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+hasil = mengurutkan_angka(input)
+print(hasil)
